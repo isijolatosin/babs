@@ -14,7 +14,7 @@ const Logo = function () {
 				<img
 					src={logo}
 					alt="artkolawolejohnson-logo"
-					className="w-[55px] mb-2"
+					className="w-[60px] md:w-[55px] md:mb-2"
 				/>
 			</Link>
 			{(user?.email === AUTHORIZED_ID.id_one ||
