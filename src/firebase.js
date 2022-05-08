@@ -4,13 +4,13 @@ import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyDMpphfwPa21CtWJbVzp94bavfQb87kncI',
-	authDomain: 'joel-3ce9c.firebaseapp.com',
-	projectId: 'joel-3ce9c',
-	storageBucket: 'joel-3ce9c.appspot.com',
-	messagingSenderId: '584154618761',
-	appId: '1:584154618761:web:3f508e2a144b8d26b49f58',
-	measurementId: 'G-YCT5HYSL3D',
+	apiKey: 'AIzaSyBYvjjB53d-DtuiBumOzWhdhG-TWdwQ6Kg',
+	authDomain: 'babs-4d967.firebaseapp.com',
+	projectId: 'babs-4d967',
+	storageBucket: 'babs-4d967.appspot.com',
+	messagingSenderId: '1004838378053',
+	appId: '1:1004838378053:web:886481bb3847b37dc1612c',
+	measurementId: 'G-XT7N14Y9XZ',
 }
 
 !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
