@@ -9,7 +9,7 @@ const logo = require('../images/logo.png')
 const Logo = function () {
 	const { user } = useContext(UserContext)
 	return (
-		<div className="flex items-center justify center">
+		<div className="scaleInfinite flex items-center justify center">
 			<Link to="/" className="flex items-center">
 				<img
 					src={logo}

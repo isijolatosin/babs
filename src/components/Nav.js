@@ -60,7 +60,7 @@ const Nav = function () {
 
 	return (
 		<div>
-			<div className="h-[60px] flex items-center justify-between md:shadow-lg px-5 pb-1 fixed z-[50] w-full pt-1 lg:w-[85%] md:mt-[-10px] md:h-[50px] bg-blur">
+			<div className="h-[60px] flex items-center justify-between md:shadow-lg px-5 pb-1 fixed z-[50] w-full pt-1 lg:w-[85%] md:mt-[-10px] md:pt-4 bg-blur">
 				<Logo />
 				<div className="hidden md:inline navStyle">
 					{navLinks.map((nav) => (
