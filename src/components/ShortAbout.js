@@ -10,7 +10,8 @@ function ShortAbout() {
 	}
 	return (
 		<div className="relative flex flex-col md:flex-row items-center justify-between w-[70%] h-[550px] md:h-[300px] mx-auto">
-			<p className="scalePosition bg-blur2 h-[350px] md:h-[200px] px-2 mb-20  w-full md:w-[70%] text-white font-light text-center text-md pt-10 md:pt-10 md:border-r-[1px] md:border-[rgba(255,255,255,0.2)] md:pr-10">
+			<div className="bg-yellow-600 h-[200px] rounded-l-2xl w-[30px] absolute top-[20px] left-[-5px]"></div>
+			<p className="scalePosition rounded-2xl bg-blur2 h-[350px] md:h-[200px] px-2 mb-20  w-full md:w-[70%] text-white font-light text-center text-md pt-10 md:pt-10 md:border-r-[1px] md:border-[rgba(255,255,255,0.2)] md:pr-10">
 				One team to handle all of your needs in on place. We are expert to
 				finding artistic creative solutions and delivering the perfect results.
 				<br />

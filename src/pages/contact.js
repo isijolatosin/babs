@@ -81,14 +81,14 @@ const Contact = function () {
 			</Helmet>
 			<Layout>
 				<div className="relative md:pt-[300px] pt-[300px] home">
-					<h1 className="text-white ml-[60px] md:ml-0 absolute top-32 text-3xl italic md:left-[38%]">
+					<h1 className="scaleInfinite text-white ml-[60px] md:ml-0 absolute top-32 text-3xl italic md:left-[38%]">
 						CONNECT <span className="text-xl">with</span>{' '}
 						<span className="text-cyan-900 font-bold">BABS</span>
 					</h1>
 					<div className="bg-white flex flex-col md:flex-row justify-center items-center md:px-20 md:rounded-t-[50px]">
 						<form
 							onSubmit={handleSubmit}
-							className="shadow-xl shadow-white mt-[-70px] w-full flex flex-col items-center md:max-w-[50%] bg-blur py-5 mb-5">
+							className="scalePosition2 shadow-xl shadow-white w-full flex flex-col items-center md:max-w-[50%] bg-blur py-5 mb-5">
 							<span className="text-[10px] font-light mb-2">
 								Contact -{' '}
 								<Link to="/" className="text-yellow-600 text-sm navStyleChild">
@@ -183,7 +183,7 @@ const Contact = function () {
 								)}
 							</div>
 						</form>
-						<div className="md:ml-10 w-full my-5 border-[5px] pl-10 rounded-[100px] border-l-0 p-5 border-cyan-900">
+						<div className=" md:ml-10 w-full my-5 border-[5px] pl-10 rounded-[100px] border-l-0 p-5 border-cyan-900">
 							<div className="relative">
 								<div className="w-[20px] h-[50px] rotate-45 bg-yellow-500"></div>
 								<h1 className="text-2xl text-cyan-900 absolute bottom-0 font-bold left-0">

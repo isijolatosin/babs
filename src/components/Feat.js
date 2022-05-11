@@ -77,64 +77,66 @@ function Feat() {
 
 	return (
 		<div className="relative flex flex-col items-center w-full">
-			<div className="flex flex-col w-full items-center bg-[rgba(255,255,255,1)] py-20 md:pt-32 rounded-t-[50px]  md:rounded-t-[100px]">
-				<h1 className="text-gray-700 text-lg md:text-2xl font-bold mb-7">
-					FEATURED ART WORKS
-				</h1>
-				<div className="catBg w-full md:w-[50%] px-5 md:px-10 py-5 md:rounded-full flex items-center justify-between">
-					<div
-						onClick={() => {
-							setIndex(0)
-						}}
-						className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
-						<div className="front">
-							<span>DANCE</span>
+			<div className="flex flex-col w-full items-center pt-20 md:pt-32 rounded-t-[50px]  md:rounded-t-[100px]">
+				<div className="w-full flex flex-col items-center pt-1 pb-[-2px] catBg rounded-t-[100px]">
+					<h1 className="text-gray-50 text-lg font-bold pt-2">
+						FEATURED ART WORKS
+					</h1>
+					<div className="w-full md:w-[50%] px-5 md:px-10 py-5 md:rounded-full flex items-center justify-between">
+						<div
+							onClick={() => {
+								setIndex(0)
+							}}
+							className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
+							<div className="front">
+								<span>DANCE</span>
+							</div>
+							<div className="back">
+								<img src={dance[0]?.image} className="cardImg" alt="" />
+							</div>
 						</div>
-						<div className="back">
-							<img src={dance[0]?.image} className="cardImg" alt="" />
+						<div
+							onClick={() => {
+								setIndex(1)
+							}}
+							className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
+							<div className="front">
+								<span>BOLDNESS</span>
+							</div>
+							<div className="back">
+								<img src={boldness[0]?.image} className="cardImg" alt="" />
+							</div>
 						</div>
-					</div>
-					<div
-						onClick={() => {
-							setIndex(1)
-						}}
-						className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
-						<div className="front">
-							<span>BOLDNESS</span>
+						<div
+							onClick={() => {
+								setIndex(2)
+							}}
+							className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
+							<div className="front">
+								<span>CONSUME</span>
+							</div>
+							<div className="back">
+								<img src={consume[0]?.image} className="cardImg" alt="" />
+							</div>
 						</div>
-						<div className="back">
-							<img src={boldness[0]?.image} className="cardImg" alt="" />
-						</div>
-					</div>
-					<div
-						onClick={() => {
-							setIndex(2)
-						}}
-						className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
-						<div className="front">
-							<span>CONSUME</span>
-						</div>
-						<div className="back">
-							<img src={consume[0]?.image} className="cardImg" alt="" />
-						</div>
-					</div>
-					<div
-						onClick={() => handleOpenModal(index)}
-						className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
-						<div className="front text-white flex items-center justify-center text-xl">
-							<BsSearch />
-							<p className="text-[10px] ml-1 font-light">Gallery</p>
-						</div>
-						<div className="back  mt-0">
-							<span className="text-black">{features[index]?.name}</span>
+						<div
+							onClick={() => handleOpenModal(index)}
+							className="card w-[80px] h-[50px] md:w-[100px] md:h-[100px]">
+							<div className="front text-white flex items-center justify-center text-xl">
+								<BsSearch />
+								<p className="text-[10px] ml-1 font-light">Gallery</p>
+							</div>
+							<div className="back mt-2">
+								<span className="text-black">{features[index]?.name}</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div className="w-full mt-10 flex flex-col items-center">
-					<div className="mb-5">
+				<div className="w-full flex flex-col items-center">
+					<div className="text-center pt-5 bg-[rgba(255,255,255,1)] w-full">
 						<span className="text-3xl capitalize">{features[index]?.name}</span>
 					</div>
-					<div className="w-[90%] md:w-[80%] mb-[50px]">
+					<div className="px-5 mb-[100px] bg-[rgba(255,255,255,1)] py-10 md:px-40 ">
 						<div>
 							<img
 								src={features[index].item[0]?.image}
@@ -158,7 +160,7 @@ function Feat() {
 							</span>
 						</div>
 					</div>
-					<div className="w-[90%] md:w-[80%] mb-[50px]">
+					<div className="px-5 mb-[100px] bg-[rgba(255,255,255,1)] py-10 md:px-40 ">
 						<div>
 							<img
 								src={features[index].item[1]?.image}
@@ -182,7 +184,7 @@ function Feat() {
 							</span>
 						</div>
 					</div>
-					<div className="w-[90%] md:w-[80%] mb-[50px]">
+					<div className="px-5 mb-[100px] bg-[rgba(255,255,255,1)] py-10 md:px-40 ">
 						<div>
 							<img
 								src={features[index].item[2]?.image}
